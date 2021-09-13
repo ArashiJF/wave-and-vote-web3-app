@@ -105,7 +105,7 @@ function AppModules() {
           </p>
         }
         {selection === PETS && <p>
-          I like trains 🚂 <br/> just kidding!!
+          I like trains <span role="img" aria-label="train-emoji">🚂</span> <br/> just kidding!!
           </p>
         }
       </div>
@@ -371,6 +371,7 @@ function PetComponent() {
       ) : (
       <form className="form" onSubmit={(e) => e.preventDefault()}>
         <label className="label">
+          {/* eslint-disable-next-line */}
           🐱 🐶 Time to get serious, which pet is the best!? 🐦 🐢 🐟
           <input placeholder="Input a reason" className="textInput" type="text" value={reason} onChange={(e) => setReason(e.target.value)} />
         </label>
