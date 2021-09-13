@@ -105,7 +105,7 @@ function AppModules() {
           </p>
         }
         {selection === PETS && <p>
-          I like trains 🚂 <br/> just kidding!
+          I like trains 🚂 <br/> just kidding!!
           </p>
         }
       </div>
