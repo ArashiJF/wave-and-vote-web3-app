@@ -1,0 +1,157 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #daded9;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  font-size: 1rem;
+  text-align: center;
+  color: #0f0f0f;
+  margin-top: 16px;
+}
+
+.selectionRow {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.baseButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0px;
+  border-radius: 5px;
+  font-weight: bold;
+  min-width: 150px;
+  box-shadow: 0px 5px 5px gray;
+}
+
+.baseButton:disabled {
+  cursor: not-allowed;
+  color: white;
+  background-color: gray;
+}
+
+.floatingButton {
+  cursor: pointer;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 4rem;
+  text-align: center;
+  color: white;
+  border: 0px;
+  font-size: 1.5rem;
+  background-color: crimson;
+	box-shadow: 4px 4px 6px gray;
+}
+
+.floatingButton:hover {
+  font-size: 2rem;
+  background-color: red;
+}
+
+.waveButton {
+  color: #0f0f0f;
+  background-color: lightgreen;
+}
+
+.waveButton:enabled:hover {
+  color: white;
+  background-color: darkgreen;
+}
+
+.petButton {
+  color: #0f0f0f;
+  background-color: cornflowerblue;
+}
+
+.petButton:enabled:hover {
+  color: white;
+  background-color: darkblue;
+}
+
+.form {
+  padding: 8px;
+}
+
+.label {
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textInput {
+  width: 90%;
+  height: 2rem;
+  border-radius: 4px;
+  margin-top: 14px;
+}
+
+.baseCard {
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 5px gray;
+}
+
+.greetCard {
+  background-color: lightgreen;
+}
+
+.petCard {
+  background-color: cornflowerblue;
+}
+
+.infoEntry {
+  margin: 4px;
+  font-size: 1rem;
+}
+
+.infoEntry > span {
+  font-weight: bold;
+}
+
+.petVoteContainer {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: auto;
+  gap: 8px 8px;
+  width: 100%;
+}
+
+.petVoteCard {
+  align-self: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 5px 5px gray;
+}
